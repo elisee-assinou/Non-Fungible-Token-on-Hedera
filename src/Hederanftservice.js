@@ -37,8 +37,8 @@ class HederaNftService {
         if (!this.client) {
             this.client = Client.forTestnet();
             this.client.setOperator(this.operatorId, this.operatorKey);
-            this.client.setDefaultMaxTransactionFee(new Hbar(2));
-            this.client.setDefaultMaxQueryPayment(new Hbar(1));
+            this.client.setDefaultMaxTransactionFee(new Hbar(50));
+            this.client.setDefaultMaxQueryPayment(new Hbar(30));
             console.log("Client Hedera connecté");
         }
         return this.client;
