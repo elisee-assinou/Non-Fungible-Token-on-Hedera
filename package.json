@@ -2,14 +2,15 @@
   "name": "NFT-ON-HEDERA",
   "version": "1.0.0",
   "type": "module",
-  "main": "createNFTToken.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node createNFTToken.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hashgraph/sdk": "^2.73.2"
+    "@hashgraph/sdk": "^2.73.2",
+    "dotenv": "^17.2.2"
   }
 }
